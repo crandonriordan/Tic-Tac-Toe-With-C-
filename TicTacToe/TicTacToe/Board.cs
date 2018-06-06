@@ -42,11 +42,11 @@ namespace TicTacToe
             while(validInput < 0)
             {
                 Console.WriteLine();
-                Console.WriteLine("Enter a valid position 0-8:");
+                Console.WriteLine("Enter a valid position 1-9:");
                 string userInput = Console.ReadLine();
                 if (int.TryParse(userInput, out int number) && (number > -1 && number < 9))
                 {
-                    validInput = number;
+                    validInput = number - 1;
                 }
             }
 

@@ -133,7 +133,7 @@ namespace TicTacToe
         public Engine Load()
         {
             Console.Write("Enter the file name:");
-            string fileName = Console.ReadLine();
+            string fileName = Console.ReadLine() + ".bin";
 
             IFormatter formatter = new BinaryFormatter();
             Stream stream = new FileStream(fileName,
